@@ -41,7 +41,7 @@ tasks.forEach((task, i) => {    // tasks -> element, i -> index
 
 
 
-objects
+//objects
 const person = {
   name: "Alice",
   age: 30,
@@ -162,4 +162,9 @@ while(c < 10) {
     console.log(c);
     c++;
     console.log("Next iteration")
+}
+
+//tricky for loop to return 0,1,2 var-> let
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 100); // 3,3,3
 }

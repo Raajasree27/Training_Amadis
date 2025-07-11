@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mpl{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id="hel">Hello Everyone!</p>
+    <div>
+        <h5>Hello</h5>
+        <h6>Welcome to Amadis</h6>
+    </div>
+    <div class="query">
+        <h1>Welcomes you all</h1>
+        <p id="ps">Please help yourself</p>
+    </div>
+    <div>
+        <button onclick="myfun()">Hiii!!</button>
+        <button id="sub">Click Me</button><br>
+        <button id="mpl">Submit</button>
+    </div>
+
+
+    <!-- script -->
+    <script>
+        console.log(document.getElementById("hel").innerText="Bye")
+        let vari=document.getElementsByTagName("h6")[0].style.color="red";
+        console.log(vari);
+        let quer=document.querySelector(".query").style.background="blue";
+        let para=document.querySelector(".query #ps" ).style.color="white";
+
+        let parag=document.querySelectorAll("p");
+        parag.forEach(p=>{
+            p.style.color="pink";
+        })
+
+        function myfun(){
+            alert("Excuse Me did you call me!");
+        }
+
+        document.getElementById("sub").addEventListener("click",function(){
+            document.getElementById("sub").innerHTML="Did you just click Me!";
+            alert("Stop in the name of law");
+        })
+
+        document.getElementById("mpl").addEventListener("click",myfunction); // if we put () then it directly calls the function without clicking the button.
+        function myfunction(){
+            document.getElementById("mpl").style.fontSize="40px";
+            document.getElementById("mpl").style.backgroundColor="lightblue";
+            document.getElementById("mpl").style.border="2px solid brown";
+        }
+
+    </script>
+</body>
+</html>

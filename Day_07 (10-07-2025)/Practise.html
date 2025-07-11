@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+             padding: 10px ;
+             border: 2px solid orange;
+             height: auto;
+        }
+        .calc{
+            border: 2px solid limegreen;
+            border-radius: 5px;
+            margin-left: 400px;
+            margin-right: 600px;
+            padding: 30px;
+            box-shadow:10px 10px lightpink;
+        }
+        .calc button{
+            padding: 10px;
+            margin-top: 12px;
+        }
+        .calc input{
+            width: 200px;
+        }
+        .my{
+            background-color: aquamarine;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h2 id="id1">Hello World!!</h2>
+        <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur debitis placeat enim deleniti quo necessitatibus?</p>
+        <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, vero aspernatur ipsa aliquid cumque in necessitatibus quaerat! Natus nihil dolorem assumenda quibusdam soluta impedit eaque, magnam et aperiam similique odit deleniti dolorum, commodi esse. Voluptate!</p>
+    </div>
+    <div class="box2">
+        <h4>Click the button. You have a surprise!</h4>
+        <button id="b1" onclick="myfunc()">Click Me 😜</button>
+    </div>
+
+<!-- eventListener -->
+    <div class="box3">
+        <h3>Add Event Listener</h3>
+        <button>Allow Me to introduce myself</button>
+        <p></p>
+    </div>
+    <div class="calc">
+        <h2>Give two Numbers</h2>
+        <input id="in1"type="number" placeholder="Enter the first Number"> <input id="in2" type="number" placeholder="Enter the second Number"><br>
+        <button id="bt1"> Add</button>
+        <button id="bt2">Subtraction</button>
+        <button id="bt3">Multiply</button>
+        <button id="bt4">Division</button>
+        <h3>Output: </h3>
+    </div>
+<!-- append Child -->
+ <div>
+    <h1>The element Object</h1>
+    <h2>The append has been used</h2>
+    <ul id="mylist">
+        <li>Water</li>
+        <li>Ice</li>
+    </ul>
+    <ul id="mylist2">
+        <li>Plant</li>
+        <li>Milk</li>
+    </ul>
+ </div>
+<!-- attributes -->
+<div class="attr">
+    <h3>Attributes</h3>
+    <img id="id3" width="150px" height="200px" alt="Flower" >
+    <p id="de"></p>
+</div>
+<!-- classList -->
+ <div>
+    <h3>ClassList</h3>
+    <p id="i5">Class list is used to add classes</p>
+    <button onclick="fun()">Add class</button>
+ </div>
+ <!-- get attributes -->
+  <div>
+    <h1>The Element Object</h1>
+<h2>The getAttribute() Method</h2>
+Learn more about the <a id="myAnchor" href="dom_obj_attributes.asp" target="_blank">Attr object</a>.
+  </div>
+  <p id="demo"></p>
+<!-- js file     -->                                                                                                
+<script src="one.js"></script> 
+</body>
+</html>

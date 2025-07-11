@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <div>
+        <h1>Local Storage</h1>
+        <!-- <p id="p2" onmousemove="fuc()">This will change when the curser moves</p> -->
+        
+            <input type="text"  id="i1" placeholder="Enter Your Name">
+            <!-- <input type="mail" id="i2" placeholder="Enter your mail"> -->
+            <p id="op"></p>
+            <!-- <button type="submit" onclick="fun()">Submit</button> -->
+        
+    </div>
+    <script>
+        // localStorage.setItem("name", "Raaja");
+        // document.getElementById("p1").textContent=localStorage.getItem("name");
+        // function fuc()
+        // {
+        //     localStorage.setItem("para","Mouse moved");
+        //     let res=localStorage.getItem("para")
+        //     document.getElementById("p2").textContent=res;
+            
+        // }
+
+        function fun() // function 
+        {
+
+        var val=document.getElementById("i1").value;
+        localStorage.setItem("inputValue",val);
+        document.getElementById("i1").accessKey=""
+        var res=localStorage.getItem("inputValue")
+        document.getElementById("op").textContent="Saved:"+ res;
+        }
+
+    </script>
+</body>
+</html>

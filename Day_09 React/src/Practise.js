@@ -13,11 +13,15 @@ import { useState } from "react";
 
 
 function App(){
-    const [subscribe,setSubscribe]=useState(false)
+    const [subscribe,setSubscribe]=useState("Please Subscribe");
     return(
         <div>
-        {subscribe ? 
-            <p>Thanks for Subscribing</p>:<button onClick={()=>setSubscribe(true) } style={{color:"white", background:"red", border:"none",borderRadius:"5px"}}>Subscribe</button>} 
+            <p>{subscribe}</p>
+        {/* {subscribe ?  */}
+            {/* // <p>Thanks for Subscribing</p>:<button onClick={()=>setSubscribe(true) } style={{color:"white", background:"red", border:"none",borderRadius:"5px"}}>Subscribe</button>} */}
+            <button onClick={()=>setSubscribe("Thankyou for subscribing")}>
+                Subscribe
+            </button>
         </div>
     );
 }

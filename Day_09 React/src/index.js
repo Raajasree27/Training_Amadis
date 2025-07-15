@@ -31,6 +31,7 @@ import App from "./Practise"
 // function Cars(){
 //  var ele=<h1>Hello </h1>
 //  return ele;
+
 // }
 const container=document.getElementById('root')
 const root = ReactDOM.createRoot(container);
@@ -38,6 +39,7 @@ root.render(
    <div>
       <App/>
       {/* <Company/> */}
+   
    </div>  
 
 );

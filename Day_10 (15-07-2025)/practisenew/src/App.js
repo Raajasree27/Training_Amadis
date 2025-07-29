@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import Message from "./Message";
+// import React, {useState} from "react";
+// import Message from "./Message";
 
 // function App(){
 //   const[count,setCount]=useState(0);
@@ -44,16 +44,71 @@ import Message from "./Message";
     
 // )
 // }
-export default App
+// export default App
 
-function App(){
-  const arr1=[1,2,3,4];
-  const res=arr1.map((arr2,index)=>{
-    return <li key={index}>{arr2}</li>
-  })
-  return(
-    <div>
-      <ul>{res}</ul>
-    </div>
-  )
-}
+// function App(){
+//   const arr1=[1,2,3,4];
+//   const res=arr1.map((arr2,index)=>{
+//     return <li key={index}>{arr2}</li>
+//   })
+//   return(
+//     <div>
+//       <ul>{res}</ul>
+//     </div>
+//   )
+// }
+// import { useState } from "react"; 
+// function useInput(initialValue = "") 
+// { 
+//   const [value, setValue] = useState(initialValue); 
+//   const onChange = (e) => { 
+//     setValue(e.target.value); 
+//   }; 
+//   const reset = () => setValue(initialValue); 
+//   const clear = () => setValue(""); 
+//   return {value,onChange,reset,clear}; 
+// } 
+// // Using the custom hook 
+//  function Form() 
+//  { 
+//   const name = useInput(""); 
+//   // const email = useInput(""); 
+//   const age = useInput(""); 
+//   const handleSubmit = (e) => { 
+//     e.preventDefault(); 
+//     console.log({ 
+//       name: name.value, 
+//       // email: email.value, 
+//       age: age.value, 
+//     }); 
+//   }; 
+//   return (
+//     <form onSubmit={handleSubmit}> 
+//       <div> 
+//         <label>Name:</label> 
+//         <input 
+//           type="text" 
+//           value={name.value} 
+//           onChange={name.onChange} 
+//           placeholder="Enter your name" 
+//         />
+//       </div>  
+//       <div> 
+//         <label>Age:</label> 
+//         <input type="number" value={age.value} onChange={age.onChange} /> 
+//       </div> 
+//       <button type="submit">Submit</button> 
+//       <button 
+//         type="button" 
+//         onClick={() => { 
+//           name.clear(); 
+//           email.clear(); 
+//           age.reset(); 
+//         }}
+//       > 
+//         Reset Form 
+//       </button> 
+//     </form> 
+//   ); 
+// }
+// export default Form;
